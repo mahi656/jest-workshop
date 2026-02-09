@@ -3,18 +3,14 @@ function calculateFinalAmount(subtotal, coupon) {
     throw new Error("Invalid subtotal");
   }
 
-  let total = subtotal;
-
+  let total = subtotal
   if (subtotal >= 1000) {
     total = total - total * 0.05;
   }
-
   if (!coupon) {
     return Math.max(0, Math.round(total * 100) / 100);
   }
-
   const normalizedCoupon = coupon.toUpperCase();
-
   if (normalizedCoupon === "SAVE10") {
     const discount = Math.min(subtotal * 0.1, 100);
     total = total - discount;
@@ -24,8 +20,6 @@ function calculateFinalAmount(subtotal, coupon) {
   else{
     throw new Error("Invalid Coupon")
   }
-
-  return Math.max(0, Math.round(total * 100) / 100);
+  return Math.max(0, Math.round(total * 100) / 100)
 }
-
-module.exports = { calculateFinalAmount };
+module.exports = { calculateFinalAmount }

@@ -46,7 +46,7 @@ Confirms that the testing environment is working correctly and Jest is properly 
 
 ## CI Pipeline (if implemented)
 - Did CI pass successfully? Yes
-- GitHub Actions Run URL: (Paste your GitHub Actions link here)
+- GitHub Actions Run URL: https://github.com/mahi656/jest-workshop
 
 ---
 
