@@ -17,4 +17,4 @@
 
 ## Run locally
 npm install
-npm test
+np
